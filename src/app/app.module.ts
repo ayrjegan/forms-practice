@@ -7,6 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FirstFormComponent } from './first-form/first-form.component';
 import { SecondFormComponent } from './second-form/second-form.component';
 import { ThirdFormComponent } from './third-form/third-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ThirdFormComponent } from './third-form/third-form.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
