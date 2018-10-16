@@ -8,6 +8,7 @@ import { FirstFormComponent } from './first-form/first-form.component';
 import { SecondFormComponent } from './second-form/second-form.component';
 import { ThirdFormComponent } from './third-form/third-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TicketsComponent } from './tickets/tickets.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     FirstFormComponent,
     SecondFormComponent,
-    ThirdFormComponent
+    ThirdFormComponent,
+    TicketsComponent
   ],
   imports: [
     BrowserModule,

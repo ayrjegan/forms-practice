@@ -4,7 +4,20 @@
     </mat-card-header>
   <mat-card-content>
   
-    Replace this content with your Second form.
+<form [formGroup]="secondForm">
+  <mat-form-field>
+    <input matInput formControlName="username" placeholder="User Name"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput formControlName="id1" placeholder="Id"/>
+  </mat-form-field>
+
+  <!-- <mat-form-field>
+
+  </mat-form-field> -->
+</form>
+
   
   </mat-card-content>
   

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-second-form',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondFormComponent implements OnInit {
 
-  constructor() { }
+  secondForm : FormGroup;
+  
+  buildForm(){
+    this.secondForm = this.formBuilder.group({
+        username:'',
+        id1:''
+    });
+  }
+
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.buildForm();
   }
 
 }

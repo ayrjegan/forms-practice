@@ -5,11 +5,30 @@
 <mat-card-content>
 
 <form [formGroup]="firstForm">
-    <mat-form-field>
-  <input matInput [formControlName]="firstname" placeholder="First Name"/>
+  <mat-form-field>
+    <input matInput formControlName="firstname" placeholder="First Name"/>
   </mat-form-field>
-</form>
 
-</mat-card-content>
+
+  <mat-form-field>
+    <input matInput placeholder="Last Name" aria-label="Last Name" formControlName="lastname">
+  </mat-form-field>
+&nbsp; &nbsp;
+
+  <mat-form-field>
+    <input matInput placeholder="E-mail" aria-label="E-mail" formControlName="email">
+  </mat-form-field>
+  &nbsp; &nbsp;
+  
+  <mat-form-field>
+    <input matInput placeholder="Mobile No" aria-label="Mobile No" formControlName="mobileno">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Address" aria-label="Address" formControlName="address">
+  </mat-form-field>
+
+</form>
+  </mat-card-content>
 
 </mat-card>

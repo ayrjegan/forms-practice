@@ -18,7 +18,11 @@ export class FirstFormComponent implements OnInit {
   //          Dependency FormBuilder is required, define that in constructor. Check constructor.
   buildForm(){
     this.firstForm = this.formBuilder.group({
-        firstname:''
+        firstname:'',
+        lastname:'',
+        email:'',
+        mobileno:'',
+        address:''
     });
   }
   // Step 5, call this method buildForm in ngOnInit()
