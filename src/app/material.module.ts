@@ -5,7 +5,7 @@ import {MatButtonModule, MatToolbarModule, MatIconModule,
   MatSidenavModule, MatListModule, MatCardModule, MatFormFieldModule, MatDialogModule,
 MatSnackBarModule, MatInputModule, MatPaginatorModule, MatTableModule,
 MatSortModule, MatProgressSpinnerModule,
-MatSelectModule, MatOptionModule, MatCheckboxModule,MatSlideToggleModule } 
+MatSelectModule, MatOptionModule, MatCheckboxModule,MatSlideToggleModule, MatRadioModule } 
 from '@angular/material'
 
 @NgModule({
@@ -25,7 +25,8 @@ from '@angular/material'
     MatTableModule,
     MatSortModule,
     MatProgressSpinnerModule,
-    MatSelectModule, MatOptionModule, MatCheckboxModule, MatSlideToggleModule
+    MatSelectModule, MatOptionModule, MatCheckboxModule, MatSlideToggleModule,
+    MatRadioModule
   ],
   exports:[
     MatButtonModule,
@@ -42,7 +43,8 @@ from '@angular/material'
     MatTableModule,
     MatSortModule,
     MatProgressSpinnerModule,
-    MatSelectModule, MatOptionModule, MatCheckboxModule, MatSlideToggleModule
+    MatSelectModule, MatOptionModule, MatCheckboxModule, MatSlideToggleModule,
+    MatRadioModule
   ],
   declarations: []
 })

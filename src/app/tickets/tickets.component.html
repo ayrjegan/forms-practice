@@ -1,4 +1,113 @@
-<p>
-  tickets works!
-</p>
+<mat-card>
+    <mat-card-header>
+      <h4>Ticket Form</h4>
+    </mat-card-header>
+  <mat-card-content>
 
+
+    <form [formGroup]="ticketForm">
+    
+        <mat-form-field>
+            <input matInput formControlName="Id" placeholder="Id"/>
+        </mat-form-field>
+        &nbsp; &nbsp;       
+        <mat-form-field>
+            <input matInput formControlName="TenantId" placeholder="TenantId"/> 
+        </mat-form-field>
+        &nbsp; &nbsp;   
+        <mat-form-field>
+            <input matInput formControlName="TicketId" placeholder="TicketId"/>
+        </mat-form-field> 
+        &nbsp; &nbsp;    
+    <div>
+        <mat-form-field>
+            <input matInput formControlName="RaisedBy" placeholder="RaisedBy"/>
+        </mat-form-field>
+        &nbsp; &nbsp;     
+        <mat-form-field>
+            <input matInput formControlName="Description" placeholder="Description"/>
+        </mat-form-field> 
+        &nbsp; &nbsp;
+        <mat-form-field>
+            <input matInput formControlName="RaisedThrough" placeholder="RaisedThrough"/>
+        </mat-form-field>     
+        &nbsp; &nbsp;  
+    </div>
+        <mat-form-field>
+            <input matInput formControlName="assignedto" placeholder="Assignedto"/>
+        </mat-form-field>  
+        &nbsp; &nbsp;     
+        <mat-form-field>
+                <input matInput formControlName="RaisedAt" placeholder="RaisedAt"/>
+        </mat-form-field>
+        &nbsp; &nbsp;
+        <mat-form-field>
+            <input matInput formControlName="AssignedAt" placeholder="AssignedAt"/>
+        </mat-form-field>
+        &nbsp; &nbsp;
+        <mat-form-field>
+            <input matInput formControlName="Assignedby" placeholder="Assignedby"/>
+        </mat-form-field>
+        &nbsp; &nbsp;
+    <div>
+        <mat-form-field>
+            <input matInput formControlName="Status" placeholder="Status"/>
+        </mat-form-field>
+        &nbsp; &nbsp;   
+        <mat-form-field>
+            <input matInput formControlName="Priority" placeholder="Priority"/>
+        </mat-form-field>
+        &nbsp; &nbsp;     
+        <mat-form-field>
+            <input matInput formControlName="Response" placeholder="Response"/>
+        </mat-form-field> 
+        &nbsp; &nbsp;     
+    </div>   
+    <div>    
+        <mat-form-field>
+            <input matInput formControlName="Remarks" placeholder="Remarks"/>
+        </mat-form-field>
+        &nbsp; &nbsp;  
+        <mat-form-field>
+            <input matInput formControlName="Createdby" placeholder="Createdby"/>
+        </mat-form-field>
+        &nbsp; &nbsp; 
+        <mat-form-field>
+            <input matInput formControlName="CreatedTimeStamp" placeholder="CreatedTimeStamp"/>
+        </mat-form-field>
+    </div>    
+     
+        <mat-form-field>
+            <input matInput formControlName="Modifiedby" placeholder="Modifiedby"/>
+        </mat-form-field>       
+        &nbsp; &nbsp;    
+        <mat-form-field>
+            <input matInput formControlName="ModifiedTimeStamp" placeholder="ModifiedTimeStamp"/>
+        </mat-form-field>
+
+
+        
+
+
+        <mat-form-field>
+            <mat-select placeholder="Favorite food">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+    </form>
+  
+    
+    <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
+        <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+          {{season}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <div class="example-selected-value">Your favorite season is: {{favoriteSeason}}</div>
+
+      
+   </mat-card-content>
+
+</mat-card>
