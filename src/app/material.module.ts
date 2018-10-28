@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 
 import {MatButtonModule, MatToolbarModule, MatIconModule, 
   MatSidenavModule, MatListModule, MatCardModule, MatFormFieldModule, MatDialogModule,
-MatSnackBarModule, MatInputModule, MatPaginatorModule, MatTableModule,
+MatSnackBarModule, MatInputModule, MatPaginatorModule, 
+MatTableModule,
 MatSortModule, MatProgressSpinnerModule,
-MatSelectModule, MatOptionModule, MatCheckboxModule,MatSlideToggleModule, MatRadioModule } 
+MatSelectModule, MatOptionModule, MatCheckboxModule,MatSlideToggleModule, 
+MatRadioModule } 
 from '@angular/material'
 
 @NgModule({
