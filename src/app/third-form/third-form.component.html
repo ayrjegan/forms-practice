@@ -1,15 +1,35 @@
-<mat-table [datasource]="datasource">
+<mat-card fxFlex="90%">
+  <mat-card-header>
+    <mat-card-title>
+      <h2> Users Table Data </h2>
+    </mat-card-title>
+  </mat-card-header>
+
+<mat-table [dataSource]="datasource" class="mat-elevation-z8">
   
   <ng-container matColumnDef="position">
-    <mat-header-cell *matHeaderCellDef mat-sort-header> No </mat-header-cell>
-    <mat-cell *matCellDef="let element">{{element.No}}</mat-cell>
+    <mat-header-cell *matHeaderCellDef > No </mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.position}}</mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderDef mat-sort-header> Name </mat-header-cell>
-    <mat-cell *matcellDef="let element">{{element.Name}}</mat-cell>
+    <mat-header-cell *matHeaderCellDef > Name </mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.name}}</mat-cell>
   </ng-container>
 
+  <ng-container matColumnDef="address">
+    <mat-header-cell *matHeaderCellDef > Address </mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.address}}</mat-cell>
+  </ng-container> 
+  
+  <ng-container matColumnDef="phoneno">
+    <mat-header-cell *matHeaderCellDef > PhoneNo </mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.phoneno}}</mat-cell>
+  </ng-container>
+  
   <mat-header-row *matHeaderRowDef="displayedcolumns"></mat-header-row>
-  <mat-row *matRowDef ="letrow; columns: displayedcolumns"></mat-row>
+  <mat-row *matRowDef ="let row; columns: displayedcolumns"></mat-row>
+
 </mat-table>
+<mat-paginator [pageSizeOptions]="[3, 5]" showFirstLastButtons></mat-paginator>
+</mat-card>
