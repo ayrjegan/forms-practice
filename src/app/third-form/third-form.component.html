@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mat-card fxFlex="90%">
   <mat-card-header>
     <mat-card-title>
@@ -6,6 +7,9 @@
   </mat-card-header>
 
 <mat-table [dataSource]="datasource" class="mat-elevation-z8">
+=======
+<mat-table [dataSource]="datasource">
+>>>>>>> e91d73c4a32e7611cadc680fbe7f32f8a3db9c32
   
   <ng-container matColumnDef="position">
     <mat-header-cell *matHeaderCellDef > No </mat-header-cell>
@@ -29,7 +33,11 @@
   
   <mat-header-row *matHeaderRowDef="displayedcolumns"></mat-header-row>
   <mat-row *matRowDef ="let row; columns: displayedcolumns"></mat-row>
+<<<<<<< HEAD
 
 </mat-table>
 <mat-paginator [pageSizeOptions]="[3, 5]" showFirstLastButtons></mat-paginator>
 </mat-card>
+=======
+</mat-table>
+>>>>>>> e91d73c4a32e7611cadc680fbe7f32f8a3db9c32
